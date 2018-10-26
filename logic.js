@@ -5,6 +5,16 @@
 
 // Assign the reference to the database to a variable named 'database'
 // var database = ...
+var config = {
+  apiKey: "AIzaSyAo71Ymf_jSAHlTV_ZiAsWc6ofj9ZQwYhY",
+  authDomain: "codersbay-6a7ae.firebaseapp.com",
+  databaseURL: "https://codersbay-6a7ae.firebaseio.com",
+  projectId: "codersbay-6a7ae",
+  storageBucket: "codersbay-6a7ae.appspot.com",
+  messagingSenderId: "261716702762"
+};
+firebase.initializeApp(config);
+
 var database = firebase.database();
 
 // Initial Values
@@ -46,7 +56,7 @@ database.ref().on("value", function (snapshot) {
 
     // Change the HTML to reflect the initial values
     highBidderDisplay.text(initialBidder);
-    highPriceDisplay.text(initialPrice);
+    highPriceDisplay.text(initialBid);
 
     // Print the data to the console.
 
