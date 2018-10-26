@@ -78,7 +78,7 @@ $("#submit-bid").on("click", function (event) {
   event.preventDefault();
 
   // Get the input values
-  bidderPrice = $("#bidder-price").val();
+  bidderPrice = Number($("#bidder-price").val());
   bidderName = $("#bidder-name").val();
 
 
